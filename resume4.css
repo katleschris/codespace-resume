@@ -1,0 +1,96 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.clearfix {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    background-color: aquamarine;
+    justify-content: space-between;
+}
+
+.topart {
+    order: 1;
+    width: 60%;
+}
+
+.links {
+    order: 2;
+    width: 30%;
+}
+
+
+img {
+    float: left;
+    width: 25%;
+    border-radius: 50%;
+  }
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+p {
+    font-size: small;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    background-color: aquamarine;
+    justify-content: space-between;
+}
+
+div.experience {
+    order: 1;
+    width: 45%;
+    background-color: #99F5B2;
+    padding: 5px; 
+}
+
+div.education {
+    order: 2;
+    width: 50%;
+    background-color: #A5C1FF;
+    padding: 5px; 
+}
+
+h1, h2{
+    font-size: medium;
+}
+h3{
+    font-size: small;
+}
+ul{
+    font-size: smaller;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+}
+.skills{
+    order: 1;
+}
+.contact{
+    order: 2;
+    width: 50%;
+}
+.bottom {
+    display: flex;
+    flex-direction: row;
+    background-color: aquamarine;
+    justify-content: space-between;
+}
+
