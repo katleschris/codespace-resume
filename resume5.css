@@ -5,19 +5,19 @@
 .clearfix {
     height: 50%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: aquamarine;
     justify-content: space-between;
 }
 
 .topart {
     order: 1;
-    width: 60%;
+    width: 80%;
 }
 
 .links {
     order: 2;
-    width: 30%;
+    width: 20%;
 }
 
 
