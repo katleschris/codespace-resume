@@ -85,3 +85,24 @@ ul {
   background-color: aqua;
   padding: 5px;
 }
+
+@media screen and (max-width:767px){/*phone*/.webpage{
+  flex-direction: column;
+}}
+
+.minor{width: 100%;}
+
+@media  screen and (min-width:768px) {/*tablet*/
+  .webpage{
+    flex-direction: row;
+  }
+  .minor{width: 30%;}
+  .major{width: 70%;}
+  
+}
+
+@media screen and (min-width:1024px){/*desktop*/
+  .minor{width: 20%;}
+  .major{width: 80%;}
+  
+}
