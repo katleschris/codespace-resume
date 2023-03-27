@@ -1,0 +1,108 @@
+.webpage {
+  display: flex;
+}
+
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.minor {
+  background-color: blue;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  width: 20%;
+  padding: 2px;
+  margin: 2px;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.major {
+  display: flex;
+  
+  flex-direction: column;
+  width: 80%;
+  margin: 2px;
+}
+
+.intro {
+  background-image: url("images/background.jpg");
+  background-size: contain;
+  /* background-color: aquamarine; */
+  /* display: flex; */
+  /* align-items: flex-start; */
+  /* align-items: stretch; */
+  padding: 2px;
+  margin: 2px;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  align-items: flex-end;
+  align-items: stretch;
+  padding: 2px;
+  margin: 2px;
+  height: 80%;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+p {
+  font-size: small;
+}
+
+.experience {
+  order: 1;
+  background-color: #99f5b2;
+  padding: 2px;
+  margin: 2px;
+}
+
+.education {
+  order: 2;
+  background-color: #a5c1ff;
+  padding: 2px;
+  margin: 2px;
+}
+
+h1,
+h2 {
+  font-size: medium;
+}
+h3 {
+  font-size: small;
+}
+ul {
+  font-size: smaller;
+}
+
+.bottom{
+  background-color: aqua;
+  padding: 5px;
+}
+
+@media screen and (max-width:767px){/*phone*/.webpage{
+  flex-direction: column;
+}}
+
+.minor{width: 100%;}
+
+@media  screen and (min-width:768px) {/*tablet*/
+  .webpage{
+    flex-direction: row;
+  }
+  .minor{width: 30%;}
+  .major{width: 70%;}
+  
+}
+
+@media screen and (min-width:1024px){/*desktop*/
+  .minor{width: 20%;}
+  .major{width: 80%;}
+  
+}
